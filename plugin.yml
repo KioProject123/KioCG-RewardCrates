@@ -1,0 +1,26 @@
+name: KioCG-RewardCrates
+main: com.kiocg.RewardCrates.RewardCrates
+version: 2021
+api-version: 1.17
+
+depend: [ "KioCG-ZLibraries" ]
+
+commands:
+  getCratesKey:
+    description: "获取奖励箱钥匙."
+    permission: kiocg.command.getcrateskey
+    permission-message: "§a[§b豆渣子§a] §c这个指令不可以喔 qaq"
+    usage: "§a[§b豆渣子§a] §6用法: /getcrateskey <ID> - 获取奖励箱钥匙."
+  setCrates:
+    description: "设置一个奖励箱."
+    permission: kiocg.command.setcrates
+    permission-message: "§a[§b豆渣子§a] §c这个指令不可以喔 qaq"
+    usage: "§a[§b豆渣子§a] §6用法: /setcrates <ID> - 设置一个奖励箱."
+
+permissions:
+  kiocg.command.getcrateskey:
+    description: 获取奖励箱钥匙
+    default: op
+  kiocg.command.setcrates:
+    description: 设置一个奖励箱
+    default: op
